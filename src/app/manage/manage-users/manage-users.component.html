@@ -1,0 +1,20 @@
+<br>
+<div class="container">
+  <div>
+    <div class="totalUsers" *ngFor="let item of userdata">
+      <div class="deletedUser" *ngIf="item.isDeleted">
+        <h3>{{ item.firstname }} {{ item.lastname }}</h3>
+        <button class="detailsButton btn btn-primary" (click)="getDetails(item.id-1)" >Details</button>
+      </div>
+      <div class="activeUser" *ngIf="!item.isDeleted">
+        <h3>{{ item.firstname }} {{ item.lastname }}</h3>
+        <button class="detailsButton btn btn-primary" (click)="getDetails(item.id-1)">
+          Details
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="userDetails" *ngIf="showIndex!=-1">
+    <app-user-details [id]="showIndex"></app-user-details>
+  </div>
+</div>

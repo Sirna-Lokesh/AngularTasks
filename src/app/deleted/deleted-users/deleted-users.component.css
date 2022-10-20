@@ -1,0 +1,17 @@
+.DeletedUser{
+    border: 2px solid orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    height: 70px;
+}
+.activate{
+    /* background-color: green;
+    color: white;
+    width: 80px;
+    height: 40px; */
+    justify-self: end;
+    margin-right: 10px;
+}

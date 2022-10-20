@@ -1,0 +1,6 @@
+<div class="totalDeletedUsers" *ngFor="let item of userdata">
+    <div class="DeletedUser" *ngIf="item.isDeleted">
+        <h3>{{item.firstname}} {{item.lastname}}</h3>
+        <button class="activate btn btn-success" (click)="activate(item.id-1)">Activate</button>
+    </div>
+</div>
