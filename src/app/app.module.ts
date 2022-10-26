@@ -11,6 +11,8 @@ import { ActiveModule } from './active/active.module';
 import { DeletedModule } from './deleted/deleted.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FullnamePipe } from './fullname.pipe';
+import { ManualComponentComponent } from './manual-component/manual-component.component';
+import { CliComponentComponent } from './cli-component/cli-component.component';
 // import { ManageModule } from './manage/manage.module';
 
 @NgModule({
@@ -18,7 +20,9 @@ import { FullnamePipe } from './fullname.pipe';
     AppComponent,
     HomeComponent,
     UserComponent,
-    FullnamePipe
+    FullnamePipe,
+    ManualComponentComponent,
+    CliComponentComponent
   ],
   imports: [
     BrowserModule,
