@@ -1,0 +1,19 @@
+.primary-navbar{
+    background-color: #f4f4f4;
+    color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: right;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: end;
+    height: 35px;
+    margin-right: -25px;
+}

@@ -1,0 +1,9 @@
+<div class="details">
+    <h3>User Name : {{ userdata[id].firstname }} {{userdata[id].lastname}}</h3>
+    <h3 style="color:orange" *ngIf="this.userdata[this.id].isDeleted">Status : Deleted</h3>
+    <h3 style="color:green" *ngIf="!this.userdata[this.id].isDeleted">Status : Active</h3>
+    <h3>LoginId : {{ userdata[id].loginId}}</h3>
+    <h3>firstname : {{ userdata[id].firstname}}</h3>
+    <h3>lastname  :{{ userdata[id].lastname}}</h3>
+    <h3>age  : {{ userdata[id].age}}</h3>
+</div>
